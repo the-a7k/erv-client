@@ -1,0 +1,23 @@
+{
+    "name": "adbros/erv-client",
+    "require": {
+        "php": ">=8.3",
+        "guzzlehttp/guzzle": "^7.9",
+        "guzzlehttp/psr7": "^2.7",
+        "phpro/soap-client": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ErvClient\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "sort-packages": true
+    },
+    "require-dev": {
+        "tracy/tracy": "^2.10"
+    }
+}

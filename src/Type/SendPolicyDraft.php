@@ -1,0 +1,179 @@
+<?php
+
+namespace ErvClient\Type;
+
+use Phpro\SoapClient\Type\RequestInterface;
+
+class SendPolicyDraft implements RequestInterface
+{
+    /**
+     * @var string
+     */
+    private string $uniqueId;
+
+    /**
+     * @var int
+     */
+    private int $policyNumber;
+
+    /**
+     * @var string
+     */
+    private string $language;
+
+    /**
+     * @var null | string
+     */
+    private ?string $specTemplateCode = null;
+
+    /**
+     * @var array<int<0,max>, string>
+     */
+    private array $emailAddress;
+
+    /**
+     * @var bool
+     */
+    private bool $electronicSignature;
+
+    /**
+     * Constructor
+     *
+     * @param string $uniqueId
+     * @param int $policyNumber
+     * @param string $language
+     * @param null | string $specTemplateCode
+     * @param array<int<0,max>, string> $emailAddress
+     * @param bool $electronicSignature
+     */
+    public function __construct(string $uniqueId, int $policyNumber, string $language, ?string $specTemplateCode, array $emailAddress, bool $electronicSignature)
+    {
+        $this->uniqueId = $uniqueId;
+        $this->policyNumber = $policyNumber;
+        $this->language = $language;
+        $this->specTemplateCode = $specTemplateCode;
+        $this->emailAddress = $emailAddress;
+        $this->electronicSignature = $electronicSignature;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUniqueId() : string
+    {
+        return $this->uniqueId;
+    }
+
+    /**
+     * @param string $uniqueId
+     * @return static
+     */
+    public function withUniqueId(string $uniqueId) : static
+    {
+        $new = clone $this;
+        $new->uniqueId = $uniqueId;
+
+        return $new;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPolicyNumber() : int
+    {
+        return $this->policyNumber;
+    }
+
+    /**
+     * @param int $policyNumber
+     * @return static
+     */
+    public function withPolicyNumber(int $policyNumber) : static
+    {
+        $new = clone $this;
+        $new->policyNumber = $policyNumber;
+
+        return $new;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLanguage() : string
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param string $language
+     * @return static
+     */
+    public function withLanguage(string $language) : static
+    {
+        $new = clone $this;
+        $new->language = $language;
+
+        return $new;
+    }
+
+    /**
+     * @return null | string
+     */
+    public function getSpecTemplateCode() : ?string
+    {
+        return $this->specTemplateCode;
+    }
+
+    /**
+     * @param null | string $specTemplateCode
+     * @return static
+     */
+    public function withSpecTemplateCode(?string $specTemplateCode) : static
+    {
+        $new = clone $this;
+        $new->specTemplateCode = $specTemplateCode;
+
+        return $new;
+    }
+
+    /**
+     * @return array<int<0,max>, string>
+     */
+    public function getEmailAddress() : array
+    {
+        return $this->emailAddress;
+    }
+
+    /**
+     * @param array<int<0,max>, string> $emailAddress
+     * @return static
+     */
+    public function withEmailAddress(array $emailAddress) : static
+    {
+        $new = clone $this;
+        $new->emailAddress = $emailAddress;
+
+        return $new;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getElectronicSignature() : bool
+    {
+        return $this->electronicSignature;
+    }
+
+    /**
+     * @param bool $electronicSignature
+     * @return static
+     */
+    public function withElectronicSignature(bool $electronicSignature) : static
+    {
+        $new = clone $this;
+        $new->electronicSignature = $electronicSignature;
+
+        return $new;
+    }
+}
+
