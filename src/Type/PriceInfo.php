@@ -12,7 +12,7 @@ class PriceInfo
     /**
      * @return null | array<int<0,max>, \ErvClient\Type\PriceCurrency>
      */
-    public function getPrice() : ?array
+    public function getPrice(): ?array
     {
         return $this->price;
     }
@@ -21,7 +21,7 @@ class PriceInfo
      * @param null | array<int<0,max>, \ErvClient\Type\PriceCurrency> $price
      * @return static
      */
-    public function withPrice(?array $price) : static
+    public function withPrice(?array $price): static
     {
         $new = clone $this;
         $new->price = $price;

@@ -59,7 +59,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -68,7 +68,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -79,7 +79,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return int
      */
-    public function getProductCode() : int
+    public function getProductCode(): int
     {
         return $this->productCode;
     }
@@ -88,7 +88,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param int $productCode
      * @return static
      */
-    public function withProductCode(int $productCode) : static
+    public function withProductCode(int $productCode): static
     {
         $new = clone $this;
         $new->productCode = $productCode;
@@ -99,7 +99,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return string
      */
-    public function getStartDate() : string
+    public function getStartDate(): string
     {
         return $this->startDate;
     }
@@ -108,7 +108,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param string $startDate
      * @return static
      */
-    public function withStartDate(string $startDate) : static
+    public function withStartDate(string $startDate): static
     {
         $new = clone $this;
         $new->startDate = $startDate;
@@ -119,7 +119,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return int
      */
-    public function getInsuredDays() : int
+    public function getInsuredDays(): int
     {
         return $this->insuredDays;
     }
@@ -128,7 +128,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param int $insuredDays
      * @return static
      */
-    public function withInsuredDays(int $insuredDays) : static
+    public function withInsuredDays(int $insuredDays): static
     {
         $new = clone $this;
         $new->insuredDays = $insuredDays;
@@ -139,7 +139,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -148,7 +148,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param string $currency
      * @return static
      */
-    public function withCurrency(string $currency) : static
+    public function withCurrency(string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -159,7 +159,7 @@ class GetSupplementariesOffer implements RequestInterface
     /**
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -168,7 +168,7 @@ class GetSupplementariesOffer implements RequestInterface
      * @param string $language
      * @return static
      */
-    public function withLanguage(string $language) : static
+    public function withLanguage(string $language): static
     {
         $new = clone $this;
         $new->language = $language;

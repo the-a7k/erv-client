@@ -22,7 +22,7 @@ class RespError
     /**
      * @return int
      */
-    public function getErrCode() : int
+    public function getErrCode(): int
     {
         return $this->errCode;
     }
@@ -31,7 +31,7 @@ class RespError
      * @param int $errCode
      * @return static
      */
-    public function withErrCode(int $errCode) : static
+    public function withErrCode(int $errCode): static
     {
         $new = clone $this;
         $new->errCode = $errCode;
@@ -42,7 +42,7 @@ class RespError
     /**
      * @return null | string
      */
-    public function getErrInfo() : ?string
+    public function getErrInfo(): ?string
     {
         return $this->errInfo;
     }
@@ -51,7 +51,7 @@ class RespError
      * @param null | string $errInfo
      * @return static
      */
-    public function withErrInfo(?string $errInfo) : static
+    public function withErrInfo(?string $errInfo): static
     {
         $new = clone $this;
         $new->errInfo = $errInfo;
@@ -62,7 +62,7 @@ class RespError
     /**
      * @return null | array<int<0,max>, string>
      */
-    public function getStackTrace() : ?array
+    public function getStackTrace(): ?array
     {
         return $this->stackTrace;
     }
@@ -71,7 +71,7 @@ class RespError
      * @param null | array<int<0,max>, string> $stackTrace
      * @return static
      */
-    public function withStackTrace(?array $stackTrace) : static
+    public function withStackTrace(?array $stackTrace): static
     {
         $new = clone $this;
         $new->stackTrace = $stackTrace;

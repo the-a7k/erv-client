@@ -37,7 +37,7 @@ class PolicyResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -46,7 +46,7 @@ class PolicyResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;
@@ -57,7 +57,7 @@ class PolicyResp
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -66,7 +66,7 @@ class PolicyResp
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -77,7 +77,7 @@ class PolicyResp
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -86,7 +86,7 @@ class PolicyResp
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;
@@ -97,7 +97,7 @@ class PolicyResp
     /**
      * @return float
      */
-    public function getPolicyRecId() : float
+    public function getPolicyRecId(): float
     {
         return $this->policyRecId;
     }
@@ -106,7 +106,7 @@ class PolicyResp
      * @param float $policyRecId
      * @return static
      */
-    public function withPolicyRecId(float $policyRecId) : static
+    public function withPolicyRecId(float $policyRecId): static
     {
         $new = clone $this;
         $new->policyRecId = $policyRecId;
@@ -117,7 +117,7 @@ class PolicyResp
     /**
      * @return null | string
      */
-    public function getPolicyStatus() : ?string
+    public function getPolicyStatus(): ?string
     {
         return $this->policyStatus;
     }
@@ -126,7 +126,7 @@ class PolicyResp
      * @param null | string $policyStatus
      * @return static
      */
-    public function withPolicyStatus(?string $policyStatus) : static
+    public function withPolicyStatus(?string $policyStatus): static
     {
         $new = clone $this;
         $new->policyStatus = $policyStatus;
@@ -137,7 +137,7 @@ class PolicyResp
     /**
      * @return float
      */
-    public function getPrice() : float
+    public function getPrice(): float
     {
         return $this->price;
     }
@@ -146,7 +146,7 @@ class PolicyResp
      * @param float $price
      * @return static
      */
-    public function withPrice(float $price) : static
+    public function withPrice(float $price): static
     {
         $new = clone $this;
         $new->price = $price;

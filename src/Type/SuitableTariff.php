@@ -97,7 +97,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getCode() : ?string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -106,7 +106,7 @@ class SuitableTariff
      * @param null | string $code
      * @return static
      */
-    public function withCode(?string $code) : static
+    public function withCode(?string $code): static
     {
         $new = clone $this;
         $new->code = $code;
@@ -117,7 +117,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -126,7 +126,7 @@ class SuitableTariff
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -137,7 +137,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -146,7 +146,7 @@ class SuitableTariff
      * @param null | string $description
      * @return static
      */
-    public function withDescription(?string $description) : static
+    public function withDescription(?string $description): static
     {
         $new = clone $this;
         $new->description = $description;
@@ -157,7 +157,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getRegionCode() : ?string
+    public function getRegionCode(): ?string
     {
         return $this->regionCode;
     }
@@ -166,7 +166,7 @@ class SuitableTariff
      * @param null | string $regionCode
      * @return static
      */
-    public function withRegionCode(?string $regionCode) : static
+    public function withRegionCode(?string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -177,7 +177,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getTariffSubject() : ?string
+    public function getTariffSubject(): ?string
     {
         return $this->tariffSubject;
     }
@@ -186,7 +186,7 @@ class SuitableTariff
      * @param null | string $tariffSubject
      * @return static
      */
-    public function withTariffSubject(?string $tariffSubject) : static
+    public function withTariffSubject(?string $tariffSubject): static
     {
         $new = clone $this;
         $new->tariffSubject = $tariffSubject;
@@ -197,7 +197,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getCalcType() : ?string
+    public function getCalcType(): ?string
     {
         return $this->calcType;
     }
@@ -206,7 +206,7 @@ class SuitableTariff
      * @param null | string $calcType
      * @return static
      */
-    public function withCalcType(?string $calcType) : static
+    public function withCalcType(?string $calcType): static
     {
         $new = clone $this;
         $new->calcType = $calcType;
@@ -217,7 +217,7 @@ class SuitableTariff
     /**
      * @return null | float
      */
-    public function getPrice() : ?float
+    public function getPrice(): ?float
     {
         return $this->price;
     }
@@ -226,7 +226,7 @@ class SuitableTariff
      * @param null | float $price
      * @return static
      */
-    public function withPrice(?float $price) : static
+    public function withPrice(?float $price): static
     {
         $new = clone $this;
         $new->price = $price;
@@ -237,7 +237,7 @@ class SuitableTariff
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -246,7 +246,7 @@ class SuitableTariff
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -257,7 +257,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getChildAge() : int
+    public function getChildAge(): int
     {
         return $this->childAge;
     }
@@ -266,7 +266,7 @@ class SuitableTariff
      * @param int $childAge
      * @return static
      */
-    public function withChildAge(int $childAge) : static
+    public function withChildAge(int $childAge): static
     {
         $new = clone $this;
         $new->childAge = $childAge;
@@ -277,7 +277,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMaxAdult() : int
+    public function getMaxAdult(): int
     {
         return $this->maxAdult;
     }
@@ -286,7 +286,7 @@ class SuitableTariff
      * @param int $maxAdult
      * @return static
      */
-    public function withMaxAdult(int $maxAdult) : static
+    public function withMaxAdult(int $maxAdult): static
     {
         $new = clone $this;
         $new->maxAdult = $maxAdult;
@@ -297,7 +297,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMaxAge() : int
+    public function getMaxAge(): int
     {
         return $this->maxAge;
     }
@@ -306,7 +306,7 @@ class SuitableTariff
      * @param int $maxAge
      * @return static
      */
-    public function withMaxAge(int $maxAge) : static
+    public function withMaxAge(int $maxAge): static
     {
         $new = clone $this;
         $new->maxAge = $maxAge;
@@ -317,7 +317,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMaxChildren() : int
+    public function getMaxChildren(): int
     {
         return $this->maxChildren;
     }
@@ -326,7 +326,7 @@ class SuitableTariff
      * @param int $maxChildren
      * @return static
      */
-    public function withMaxChildren(int $maxChildren) : static
+    public function withMaxChildren(int $maxChildren): static
     {
         $new = clone $this;
         $new->maxChildren = $maxChildren;
@@ -337,7 +337,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMaxDays() : int
+    public function getMaxDays(): int
     {
         return $this->maxDays;
     }
@@ -346,7 +346,7 @@ class SuitableTariff
      * @param int $maxDays
      * @return static
      */
-    public function withMaxDays(int $maxDays) : static
+    public function withMaxDays(int $maxDays): static
     {
         $new = clone $this;
         $new->maxDays = $maxDays;
@@ -357,7 +357,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMaxPersons() : int
+    public function getMaxPersons(): int
     {
         return $this->maxPersons;
     }
@@ -366,7 +366,7 @@ class SuitableTariff
      * @param int $maxPersons
      * @return static
      */
-    public function withMaxPersons(int $maxPersons) : static
+    public function withMaxPersons(int $maxPersons): static
     {
         $new = clone $this;
         $new->maxPersons = $maxPersons;
@@ -377,7 +377,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMinAdult() : int
+    public function getMinAdult(): int
     {
         return $this->minAdult;
     }
@@ -386,7 +386,7 @@ class SuitableTariff
      * @param int $minAdult
      * @return static
      */
-    public function withMinAdult(int $minAdult) : static
+    public function withMinAdult(int $minAdult): static
     {
         $new = clone $this;
         $new->minAdult = $minAdult;
@@ -397,7 +397,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMinAge() : int
+    public function getMinAge(): int
     {
         return $this->minAge;
     }
@@ -406,7 +406,7 @@ class SuitableTariff
      * @param int $minAge
      * @return static
      */
-    public function withMinAge(int $minAge) : static
+    public function withMinAge(int $minAge): static
     {
         $new = clone $this;
         $new->minAge = $minAge;
@@ -417,7 +417,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMinChildren() : int
+    public function getMinChildren(): int
     {
         return $this->minChildren;
     }
@@ -426,7 +426,7 @@ class SuitableTariff
      * @param int $minChildren
      * @return static
      */
-    public function withMinChildren(int $minChildren) : static
+    public function withMinChildren(int $minChildren): static
     {
         $new = clone $this;
         $new->minChildren = $minChildren;
@@ -437,7 +437,7 @@ class SuitableTariff
     /**
      * @return int
      */
-    public function getMinDays() : int
+    public function getMinDays(): int
     {
         return $this->minDays;
     }
@@ -446,7 +446,7 @@ class SuitableTariff
      * @param int $minDays
      * @return static
      */
-    public function withMinDays(int $minDays) : static
+    public function withMinDays(int $minDays): static
     {
         $new = clone $this;
         $new->minDays = $minDays;

@@ -82,7 +82,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getAgentCode() : ?string
+    public function getAgentCode(): ?string
     {
         return $this->agentCode;
     }
@@ -91,7 +91,7 @@ class PolicyInfo
      * @param null | string $agentCode
      * @return static
      */
-    public function withAgentCode(?string $agentCode) : static
+    public function withAgentCode(?string $agentCode): static
     {
         $new = clone $this;
         $new->agentCode = $agentCode;
@@ -102,7 +102,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -111,7 +111,7 @@ class PolicyInfo
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -122,7 +122,7 @@ class PolicyInfo
     /**
      * @return float
      */
-    public function getDiscount() : float
+    public function getDiscount(): float
     {
         return $this->discount;
     }
@@ -131,7 +131,7 @@ class PolicyInfo
      * @param float $discount
      * @return static
      */
-    public function withDiscount(float $discount) : static
+    public function withDiscount(float $discount): static
     {
         $new = clone $this;
         $new->discount = $discount;
@@ -142,7 +142,7 @@ class PolicyInfo
     /**
      * @return null | array<int<0,max>, \ErvClient\Type\InsuredPersonParms>
      */
-    public function getInsureds() : ?array
+    public function getInsureds(): ?array
     {
         return $this->insureds;
     }
@@ -151,7 +151,7 @@ class PolicyInfo
      * @param null | array<int<0,max>, \ErvClient\Type\InsuredPersonParms> $insureds
      * @return static
      */
-    public function withInsureds(?array $insureds) : static
+    public function withInsureds(?array $insureds): static
     {
         $new = clone $this;
         $new->insureds = $insureds;
@@ -162,7 +162,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getIssuedOn() : ?string
+    public function getIssuedOn(): ?string
     {
         return $this->issuedOn;
     }
@@ -171,7 +171,7 @@ class PolicyInfo
      * @param null | string $issuedOn
      * @return static
      */
-    public function withIssuedOn(?string $issuedOn) : static
+    public function withIssuedOn(?string $issuedOn): static
     {
         $new = clone $this;
         $new->issuedOn = $issuedOn;
@@ -182,7 +182,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getLastDay() : ?string
+    public function getLastDay(): ?string
     {
         return $this->lastDay;
     }
@@ -191,7 +191,7 @@ class PolicyInfo
      * @param null | string $lastDay
      * @return static
      */
-    public function withLastDay(?string $lastDay) : static
+    public function withLastDay(?string $lastDay): static
     {
         $new = clone $this;
         $new->lastDay = $lastDay;
@@ -202,7 +202,7 @@ class PolicyInfo
     /**
      * @return null | \ErvClient\Type\PolicyHolderParms
      */
-    public function getPolicyHolder() : ?\ErvClient\Type\PolicyHolderParms
+    public function getPolicyHolder(): ?\ErvClient\Type\PolicyHolderParms
     {
         return $this->policyHolder;
     }
@@ -211,7 +211,7 @@ class PolicyInfo
      * @param null | \ErvClient\Type\PolicyHolderParms $policyHolder
      * @return static
      */
-    public function withPolicyHolder(?\ErvClient\Type\PolicyHolderParms $policyHolder) : static
+    public function withPolicyHolder(?\ErvClient\Type\PolicyHolderParms $policyHolder): static
     {
         $new = clone $this;
         $new->policyHolder = $policyHolder;
@@ -222,7 +222,7 @@ class PolicyInfo
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -231,7 +231,7 @@ class PolicyInfo
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;
@@ -242,7 +242,7 @@ class PolicyInfo
     /**
      * @return float
      */
-    public function getPolicyRecId() : float
+    public function getPolicyRecId(): float
     {
         return $this->policyRecId;
     }
@@ -251,7 +251,7 @@ class PolicyInfo
      * @param float $policyRecId
      * @return static
      */
-    public function withPolicyRecId(float $policyRecId) : static
+    public function withPolicyRecId(float $policyRecId): static
     {
         $new = clone $this;
         $new->policyRecId = $policyRecId;
@@ -262,7 +262,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getPolicyStatus() : ?string
+    public function getPolicyStatus(): ?string
     {
         return $this->policyStatus;
     }
@@ -271,7 +271,7 @@ class PolicyInfo
      * @param null | string $policyStatus
      * @return static
      */
-    public function withPolicyStatus(?string $policyStatus) : static
+    public function withPolicyStatus(?string $policyStatus): static
     {
         $new = clone $this;
         $new->policyStatus = $policyStatus;
@@ -282,7 +282,7 @@ class PolicyInfo
     /**
      * @return float
      */
-    public function getPrice() : float
+    public function getPrice(): float
     {
         return $this->price;
     }
@@ -291,7 +291,7 @@ class PolicyInfo
      * @param float $price
      * @return static
      */
-    public function withPrice(float $price) : static
+    public function withPrice(float $price): static
     {
         $new = clone $this;
         $new->price = $price;
@@ -302,7 +302,7 @@ class PolicyInfo
     /**
      * @return int
      */
-    public function getProductCode() : int
+    public function getProductCode(): int
     {
         return $this->productCode;
     }
@@ -311,7 +311,7 @@ class PolicyInfo
      * @param int $productCode
      * @return static
      */
-    public function withProductCode(int $productCode) : static
+    public function withProductCode(int $productCode): static
     {
         $new = clone $this;
         $new->productCode = $productCode;
@@ -322,7 +322,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getRemark() : ?string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -331,7 +331,7 @@ class PolicyInfo
      * @param null | string $remark
      * @return static
      */
-    public function withRemark(?string $remark) : static
+    public function withRemark(?string $remark): static
     {
         $new = clone $this;
         $new->remark = $remark;
@@ -342,7 +342,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getSeller() : ?string
+    public function getSeller(): ?string
     {
         return $this->seller;
     }
@@ -351,7 +351,7 @@ class PolicyInfo
      * @param null | string $seller
      * @return static
      */
-    public function withSeller(?string $seller) : static
+    public function withSeller(?string $seller): static
     {
         $new = clone $this;
         $new->seller = $seller;
@@ -362,7 +362,7 @@ class PolicyInfo
     /**
      * @return null | string
      */
-    public function getStartDay() : ?string
+    public function getStartDay(): ?string
     {
         return $this->startDay;
     }
@@ -371,7 +371,7 @@ class PolicyInfo
      * @param null | string $startDay
      * @return static
      */
-    public function withStartDay(?string $startDay) : static
+    public function withStartDay(?string $startDay): static
     {
         $new = clone $this;
         $new->startDay = $startDay;

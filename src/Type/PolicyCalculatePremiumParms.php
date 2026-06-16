@@ -37,7 +37,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return non-empty-array<int<0,max>, \ErvClient\Type\InsuredPersonCalculatePremiumParms>
      */
-    public function getInsureds() : array
+    public function getInsureds(): array
     {
         return $this->insureds;
     }
@@ -46,7 +46,7 @@ class PolicyCalculatePremiumParms
      * @param non-empty-array<int<0,max>, \ErvClient\Type\InsuredPersonCalculatePremiumParms> $insureds
      * @return static
      */
-    public function withInsureds(array $insureds) : static
+    public function withInsureds(array $insureds): static
     {
         $new = clone $this;
         $new->insureds = $insureds;
@@ -57,7 +57,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return null | string
      */
-    public function getIssuedOn() : ?string
+    public function getIssuedOn(): ?string
     {
         return $this->issuedOn;
     }
@@ -66,7 +66,7 @@ class PolicyCalculatePremiumParms
      * @param null | string $issuedOn
      * @return static
      */
-    public function withIssuedOn(?string $issuedOn) : static
+    public function withIssuedOn(?string $issuedOn): static
     {
         $new = clone $this;
         $new->issuedOn = $issuedOn;
@@ -77,7 +77,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return string
      */
-    public function getLastDay() : string
+    public function getLastDay(): string
     {
         return $this->lastDay;
     }
@@ -86,7 +86,7 @@ class PolicyCalculatePremiumParms
      * @param string $lastDay
      * @return static
      */
-    public function withLastDay(string $lastDay) : static
+    public function withLastDay(string $lastDay): static
     {
         $new = clone $this;
         $new->lastDay = $lastDay;
@@ -97,7 +97,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return int
      */
-    public function getProductCode() : int
+    public function getProductCode(): int
     {
         return $this->productCode;
     }
@@ -106,7 +106,7 @@ class PolicyCalculatePremiumParms
      * @param int $productCode
      * @return static
      */
-    public function withProductCode(int $productCode) : static
+    public function withProductCode(int $productCode): static
     {
         $new = clone $this;
         $new->productCode = $productCode;
@@ -117,7 +117,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return string
      */
-    public function getRegionCode() : string
+    public function getRegionCode(): string
     {
         return $this->regionCode;
     }
@@ -126,7 +126,7 @@ class PolicyCalculatePremiumParms
      * @param string $regionCode
      * @return static
      */
-    public function withRegionCode(string $regionCode) : static
+    public function withRegionCode(string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -137,7 +137,7 @@ class PolicyCalculatePremiumParms
     /**
      * @return string
      */
-    public function getStartDay() : string
+    public function getStartDay(): string
     {
         return $this->startDay;
     }
@@ -146,7 +146,7 @@ class PolicyCalculatePremiumParms
      * @param string $startDay
      * @return static
      */
-    public function withStartDay(string $startDay) : static
+    public function withStartDay(string $startDay): static
     {
         $new = clone $this;
         $new->startDay = $startDay;

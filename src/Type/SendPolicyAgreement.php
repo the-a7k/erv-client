@@ -42,24 +42,24 @@ class SendPolicyAgreement implements RequestInterface
      * @param string $uniqueId
      * @param int $policyNumber
      * @param string $language
-     * @param null | string $specTemplateCode
      * @param array<int<0,max>, string> $emailAddress
      * @param bool $electronicSignature
+     * @param null | string $specTemplateCode
      */
-    public function __construct(string $uniqueId, int $policyNumber, string $language, ?string $specTemplateCode, array $emailAddress, bool $electronicSignature)
+    public function __construct(string $uniqueId, int $policyNumber, string $language, array $emailAddress, bool $electronicSignature, ?string $specTemplateCode = null)
     {
         $this->uniqueId = $uniqueId;
         $this->policyNumber = $policyNumber;
         $this->language = $language;
-        $this->specTemplateCode = $specTemplateCode;
         $this->emailAddress = $emailAddress;
         $this->electronicSignature = $electronicSignature;
+        $this->specTemplateCode = $specTemplateCode;
     }
 
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -68,7 +68,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -79,7 +79,7 @@ class SendPolicyAgreement implements RequestInterface
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -88,7 +88,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;
@@ -99,7 +99,7 @@ class SendPolicyAgreement implements RequestInterface
     /**
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -108,7 +108,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param string $language
      * @return static
      */
-    public function withLanguage(string $language) : static
+    public function withLanguage(string $language): static
     {
         $new = clone $this;
         $new->language = $language;
@@ -119,7 +119,7 @@ class SendPolicyAgreement implements RequestInterface
     /**
      * @return null | string
      */
-    public function getSpecTemplateCode() : ?string
+    public function getSpecTemplateCode(): ?string
     {
         return $this->specTemplateCode;
     }
@@ -128,7 +128,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param null | string $specTemplateCode
      * @return static
      */
-    public function withSpecTemplateCode(?string $specTemplateCode) : static
+    public function withSpecTemplateCode(?string $specTemplateCode): static
     {
         $new = clone $this;
         $new->specTemplateCode = $specTemplateCode;
@@ -139,7 +139,7 @@ class SendPolicyAgreement implements RequestInterface
     /**
      * @return array<int<0,max>, string>
      */
-    public function getEmailAddress() : array
+    public function getEmailAddress(): array
     {
         return $this->emailAddress;
     }
@@ -148,7 +148,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param array<int<0,max>, string> $emailAddress
      * @return static
      */
-    public function withEmailAddress(array $emailAddress) : static
+    public function withEmailAddress(array $emailAddress): static
     {
         $new = clone $this;
         $new->emailAddress = $emailAddress;
@@ -159,7 +159,7 @@ class SendPolicyAgreement implements RequestInterface
     /**
      * @return bool
      */
-    public function getElectronicSignature() : bool
+    public function getElectronicSignature(): bool
     {
         return $this->electronicSignature;
     }
@@ -168,7 +168,7 @@ class SendPolicyAgreement implements RequestInterface
      * @param bool $electronicSignature
      * @return static
      */
-    public function withElectronicSignature(bool $electronicSignature) : static
+    public function withElectronicSignature(bool $electronicSignature): static
     {
         $new = clone $this;
         $new->electronicSignature = $electronicSignature;

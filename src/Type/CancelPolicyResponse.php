@@ -14,7 +14,7 @@ class CancelPolicyResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\PolicyResp
      */
-    public function getReturn() : ?\ErvClient\Type\PolicyResp
+    public function getReturn(): ?\ErvClient\Type\PolicyResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class CancelPolicyResponse implements ResultInterface
      * @param null | \ErvClient\Type\PolicyResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\PolicyResp $return) : static
+    public function withReturn(?\ErvClient\Type\PolicyResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

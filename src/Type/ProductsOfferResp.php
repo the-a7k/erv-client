@@ -17,7 +17,7 @@ class ProductsOfferResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -26,7 +26,7 @@ class ProductsOfferResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;
@@ -37,7 +37,7 @@ class ProductsOfferResp
     /**
      * @return null | array<int<0,max>, \ErvClient\Type\ProductOffer>
      */
-    public function getProducts() : ?array
+    public function getProducts(): ?array
     {
         return $this->products;
     }
@@ -46,7 +46,7 @@ class ProductsOfferResp
      * @param null | array<int<0,max>, \ErvClient\Type\ProductOffer> $products
      * @return static
      */
-    public function withProducts(?array $products) : static
+    public function withProducts(?array $products): static
     {
         $new = clone $this;
         $new->products = $products;

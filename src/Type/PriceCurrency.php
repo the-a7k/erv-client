@@ -17,7 +17,7 @@ class PriceCurrency
     /**
      * @return float
      */
-    public function getAmount() : float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -26,7 +26,7 @@ class PriceCurrency
      * @param float $amount
      * @return static
      */
-    public function withAmount(float $amount) : static
+    public function withAmount(float $amount): static
     {
         $new = clone $this;
         $new->amount = $amount;
@@ -37,7 +37,7 @@ class PriceCurrency
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -46,7 +46,7 @@ class PriceCurrency
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;

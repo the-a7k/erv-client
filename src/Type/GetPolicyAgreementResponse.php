@@ -14,7 +14,7 @@ class GetPolicyAgreementResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\DocumentDataResp
      */
-    public function getReturn() : ?\ErvClient\Type\DocumentDataResp
+    public function getReturn(): ?\ErvClient\Type\DocumentDataResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class GetPolicyAgreementResponse implements ResultInterface
      * @param null | \ErvClient\Type\DocumentDataResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\DocumentDataResp $return) : static
+    public function withReturn(?\ErvClient\Type\DocumentDataResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

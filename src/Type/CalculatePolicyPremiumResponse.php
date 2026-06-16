@@ -14,7 +14,7 @@ class CalculatePolicyPremiumResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\PolicyPremiumResp
      */
-    public function getReturn() : ?\ErvClient\Type\PolicyPremiumResp
+    public function getReturn(): ?\ErvClient\Type\PolicyPremiumResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class CalculatePolicyPremiumResponse implements ResultInterface
      * @param null | \ErvClient\Type\PolicyPremiumResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\PolicyPremiumResp $return) : static
+    public function withReturn(?\ErvClient\Type\PolicyPremiumResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

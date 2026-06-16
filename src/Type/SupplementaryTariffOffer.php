@@ -112,7 +112,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -121,7 +121,7 @@ class SupplementaryTariffOffer
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -132,7 +132,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getRegionCode() : ?string
+    public function getRegionCode(): ?string
     {
         return $this->regionCode;
     }
@@ -141,7 +141,7 @@ class SupplementaryTariffOffer
      * @param null | string $regionCode
      * @return static
      */
-    public function withRegionCode(?string $regionCode) : static
+    public function withRegionCode(?string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -152,7 +152,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getTariffCode() : ?string
+    public function getTariffCode(): ?string
     {
         return $this->tariffCode;
     }
@@ -161,7 +161,7 @@ class SupplementaryTariffOffer
      * @param null | string $tariffCode
      * @return static
      */
-    public function withTariffCode(?string $tariffCode) : static
+    public function withTariffCode(?string $tariffCode): static
     {
         $new = clone $this;
         $new->tariffCode = $tariffCode;
@@ -172,7 +172,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getTariffGroupCode() : ?string
+    public function getTariffGroupCode(): ?string
     {
         return $this->tariffGroupCode;
     }
@@ -181,7 +181,7 @@ class SupplementaryTariffOffer
      * @param null | string $tariffGroupCode
      * @return static
      */
-    public function withTariffGroupCode(?string $tariffGroupCode) : static
+    public function withTariffGroupCode(?string $tariffGroupCode): static
     {
         $new = clone $this;
         $new->tariffGroupCode = $tariffGroupCode;
@@ -192,7 +192,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getTariffGroupName() : ?string
+    public function getTariffGroupName(): ?string
     {
         return $this->tariffGroupName;
     }
@@ -201,7 +201,7 @@ class SupplementaryTariffOffer
      * @param null | string $tariffGroupName
      * @return static
      */
-    public function withTariffGroupName(?string $tariffGroupName) : static
+    public function withTariffGroupName(?string $tariffGroupName): static
     {
         $new = clone $this;
         $new->tariffGroupName = $tariffGroupName;
@@ -212,7 +212,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getTariffGroupDescription() : ?string
+    public function getTariffGroupDescription(): ?string
     {
         return $this->tariffGroupDescription;
     }
@@ -221,7 +221,7 @@ class SupplementaryTariffOffer
      * @param null | string $tariffGroupDescription
      * @return static
      */
-    public function withTariffGroupDescription(?string $tariffGroupDescription) : static
+    public function withTariffGroupDescription(?string $tariffGroupDescription): static
     {
         $new = clone $this;
         $new->tariffGroupDescription = $tariffGroupDescription;
@@ -232,7 +232,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getType() : ?string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -241,7 +241,7 @@ class SupplementaryTariffOffer
      * @param null | string $type
      * @return static
      */
-    public function withType(?string $type) : static
+    public function withType(?string $type): static
     {
         $new = clone $this;
         $new->type = $type;
@@ -252,7 +252,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getMinAge() : int
+    public function getMinAge(): int
     {
         return $this->minAge;
     }
@@ -261,7 +261,7 @@ class SupplementaryTariffOffer
      * @param int $minAge
      * @return static
      */
-    public function withMinAge(int $minAge) : static
+    public function withMinAge(int $minAge): static
     {
         $new = clone $this;
         $new->minAge = $minAge;
@@ -272,7 +272,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getMaxAge() : int
+    public function getMaxAge(): int
     {
         return $this->maxAge;
     }
@@ -281,7 +281,7 @@ class SupplementaryTariffOffer
      * @param int $maxAge
      * @return static
      */
-    public function withMaxAge(int $maxAge) : static
+    public function withMaxAge(int $maxAge): static
     {
         $new = clone $this;
         $new->maxAge = $maxAge;
@@ -292,7 +292,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getChildAge() : int
+    public function getChildAge(): int
     {
         return $this->childAge;
     }
@@ -301,7 +301,7 @@ class SupplementaryTariffOffer
      * @param int $childAge
      * @return static
      */
-    public function withChildAge(int $childAge) : static
+    public function withChildAge(int $childAge): static
     {
         $new = clone $this;
         $new->childAge = $childAge;
@@ -312,7 +312,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getMinDays() : int
+    public function getMinDays(): int
     {
         return $this->minDays;
     }
@@ -321,7 +321,7 @@ class SupplementaryTariffOffer
      * @param int $minDays
      * @return static
      */
-    public function withMinDays(int $minDays) : static
+    public function withMinDays(int $minDays): static
     {
         $new = clone $this;
         $new->minDays = $minDays;
@@ -332,7 +332,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getMaxDays() : int
+    public function getMaxDays(): int
     {
         return $this->maxDays;
     }
@@ -341,7 +341,7 @@ class SupplementaryTariffOffer
      * @param int $maxDays
      * @return static
      */
-    public function withMaxDays(int $maxDays) : static
+    public function withMaxDays(int $maxDays): static
     {
         $new = clone $this;
         $new->maxDays = $maxDays;
@@ -352,7 +352,7 @@ class SupplementaryTariffOffer
     /**
      * @return int
      */
-    public function getCancellationCoverage() : int
+    public function getCancellationCoverage(): int
     {
         return $this->cancellationCoverage;
     }
@@ -361,7 +361,7 @@ class SupplementaryTariffOffer
      * @param int $cancellationCoverage
      * @return static
      */
-    public function withCancellationCoverage(int $cancellationCoverage) : static
+    public function withCancellationCoverage(int $cancellationCoverage): static
     {
         $new = clone $this;
         $new->cancellationCoverage = $cancellationCoverage;
@@ -372,7 +372,7 @@ class SupplementaryTariffOffer
     /**
      * @return float
      */
-    public function getPremium() : float
+    public function getPremium(): float
     {
         return $this->premium;
     }
@@ -381,7 +381,7 @@ class SupplementaryTariffOffer
      * @param float $premium
      * @return static
      */
-    public function withPremium(float $premium) : static
+    public function withPremium(float $premium): static
     {
         $new = clone $this;
         $new->premium = $premium;
@@ -392,7 +392,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getCalcType() : ?string
+    public function getCalcType(): ?string
     {
         return $this->calcType;
     }
@@ -401,7 +401,7 @@ class SupplementaryTariffOffer
      * @param null | string $calcType
      * @return static
      */
-    public function withCalcType(?string $calcType) : static
+    public function withCalcType(?string $calcType): static
     {
         $new = clone $this;
         $new->calcType = $calcType;
@@ -412,7 +412,7 @@ class SupplementaryTariffOffer
     /**
      * @return bool
      */
-    public function getCountable() : bool
+    public function getCountable(): bool
     {
         return $this->countable;
     }
@@ -421,7 +421,7 @@ class SupplementaryTariffOffer
      * @param bool $countable
      * @return static
      */
-    public function withCountable(bool $countable) : static
+    public function withCountable(bool $countable): static
     {
         $new = clone $this;
         $new->countable = $countable;
@@ -432,7 +432,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -441,7 +441,7 @@ class SupplementaryTariffOffer
      * @param null | string $description
      * @return static
      */
-    public function withDescription(?string $description) : static
+    public function withDescription(?string $description): static
     {
         $new = clone $this;
         $new->description = $description;
@@ -452,7 +452,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getAddType() : ?string
+    public function getAddType(): ?string
     {
         return $this->addType;
     }
@@ -461,7 +461,7 @@ class SupplementaryTariffOffer
      * @param null | string $addType
      * @return static
      */
-    public function withAddType(?string $addType) : static
+    public function withAddType(?string $addType): static
     {
         $new = clone $this;
         $new->addType = $addType;
@@ -472,7 +472,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getSelectionRule() : ?string
+    public function getSelectionRule(): ?string
     {
         return $this->selectionRule;
     }
@@ -481,7 +481,7 @@ class SupplementaryTariffOffer
      * @param null | string $selectionRule
      * @return static
      */
-    public function withSelectionRule(?string $selectionRule) : static
+    public function withSelectionRule(?string $selectionRule): static
     {
         $new = clone $this;
         $new->selectionRule = $selectionRule;
@@ -492,7 +492,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getVariantType() : ?string
+    public function getVariantType(): ?string
     {
         return $this->variantType;
     }
@@ -501,7 +501,7 @@ class SupplementaryTariffOffer
      * @param null | string $variantType
      * @return static
      */
-    public function withVariantType(?string $variantType) : static
+    public function withVariantType(?string $variantType): static
     {
         $new = clone $this;
         $new->variantType = $variantType;
@@ -512,7 +512,7 @@ class SupplementaryTariffOffer
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -521,7 +521,7 @@ class SupplementaryTariffOffer
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;

@@ -52,7 +52,7 @@ class SuitableTariffGroup
     /**
      * @return bool
      */
-    public function getAdditional() : bool
+    public function getAdditional(): bool
     {
         return $this->additional;
     }
@@ -61,7 +61,7 @@ class SuitableTariffGroup
      * @param bool $additional
      * @return static
      */
-    public function withAdditional(bool $additional) : static
+    public function withAdditional(bool $additional): static
     {
         $new = clone $this;
         $new->additional = $additional;
@@ -72,7 +72,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getGroupCode() : ?string
+    public function getGroupCode(): ?string
     {
         return $this->groupCode;
     }
@@ -81,7 +81,7 @@ class SuitableTariffGroup
      * @param null | string $groupCode
      * @return static
      */
-    public function withGroupCode(?string $groupCode) : static
+    public function withGroupCode(?string $groupCode): static
     {
         $new = clone $this;
         $new->groupCode = $groupCode;
@@ -92,7 +92,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getGroupName() : ?string
+    public function getGroupName(): ?string
     {
         return $this->groupName;
     }
@@ -101,7 +101,7 @@ class SuitableTariffGroup
      * @param null | string $groupName
      * @return static
      */
-    public function withGroupName(?string $groupName) : static
+    public function withGroupName(?string $groupName): static
     {
         $new = clone $this;
         $new->groupName = $groupName;
@@ -112,7 +112,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getGroupDescription() : ?string
+    public function getGroupDescription(): ?string
     {
         return $this->groupDescription;
     }
@@ -121,7 +121,7 @@ class SuitableTariffGroup
      * @param null | string $groupDescription
      * @return static
      */
-    public function withGroupDescription(?string $groupDescription) : static
+    public function withGroupDescription(?string $groupDescription): static
     {
         $new = clone $this;
         $new->groupDescription = $groupDescription;
@@ -132,7 +132,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getSelection() : ?string
+    public function getSelection(): ?string
     {
         return $this->selection;
     }
@@ -141,7 +141,7 @@ class SuitableTariffGroup
      * @param null | string $selection
      * @return static
      */
-    public function withSelection(?string $selection) : static
+    public function withSelection(?string $selection): static
     {
         $new = clone $this;
         $new->selection = $selection;
@@ -152,7 +152,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getVariants() : ?string
+    public function getVariants(): ?string
     {
         return $this->variants;
     }
@@ -161,7 +161,7 @@ class SuitableTariffGroup
      * @param null | string $variants
      * @return static
      */
-    public function withVariants(?string $variants) : static
+    public function withVariants(?string $variants): static
     {
         $new = clone $this;
         $new->variants = $variants;
@@ -172,7 +172,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getTariffSpec() : ?string
+    public function getTariffSpec(): ?string
     {
         return $this->tariffSpec;
     }
@@ -181,7 +181,7 @@ class SuitableTariffGroup
      * @param null | string $tariffSpec
      * @return static
      */
-    public function withTariffSpec(?string $tariffSpec) : static
+    public function withTariffSpec(?string $tariffSpec): static
     {
         $new = clone $this;
         $new->tariffSpec = $tariffSpec;
@@ -192,7 +192,7 @@ class SuitableTariffGroup
     /**
      * @return null | string
      */
-    public function getTariffType() : ?string
+    public function getTariffType(): ?string
     {
         return $this->tariffType;
     }
@@ -201,7 +201,7 @@ class SuitableTariffGroup
      * @param null | string $tariffType
      * @return static
      */
-    public function withTariffType(?string $tariffType) : static
+    public function withTariffType(?string $tariffType): static
     {
         $new = clone $this;
         $new->tariffType = $tariffType;
@@ -212,7 +212,7 @@ class SuitableTariffGroup
     /**
      * @return null | array<int<0,max>, \ErvClient\Type\SuitableTariff>
      */
-    public function getTariff() : ?array
+    public function getTariff(): ?array
     {
         return $this->tariff;
     }
@@ -221,7 +221,7 @@ class SuitableTariffGroup
      * @param null | array<int<0,max>, \ErvClient\Type\SuitableTariff> $tariff
      * @return static
      */
-    public function withTariff(?array $tariff) : static
+    public function withTariff(?array $tariff): static
     {
         $new = clone $this;
         $new->tariff = $tariff;

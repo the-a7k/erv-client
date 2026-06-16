@@ -52,7 +52,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getCode() : ?string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -61,7 +61,7 @@ class Product
      * @param null | string $code
      * @return static
      */
-    public function withCode(?string $code) : static
+    public function withCode(?string $code): static
     {
         $new = clone $this;
         $new->code = $code;
@@ -72,7 +72,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -81,7 +81,7 @@ class Product
      * @param null | string $description
      * @return static
      */
-    public function withDescription(?string $description) : static
+    public function withDescription(?string $description): static
     {
         $new = clone $this;
         $new->description = $description;
@@ -92,7 +92,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getDuration() : ?string
+    public function getDuration(): ?string
     {
         return $this->duration;
     }
@@ -101,7 +101,7 @@ class Product
      * @param null | string $duration
      * @return static
      */
-    public function withDuration(?string $duration) : static
+    public function withDuration(?string $duration): static
     {
         $new = clone $this;
         $new->duration = $duration;
@@ -112,7 +112,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -121,7 +121,7 @@ class Product
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -132,7 +132,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getProductType() : ?string
+    public function getProductType(): ?string
     {
         return $this->productType;
     }
@@ -141,7 +141,7 @@ class Product
      * @param null | string $productType
      * @return static
      */
-    public function withProductType(?string $productType) : static
+    public function withProductType(?string $productType): static
     {
         $new = clone $this;
         $new->productType = $productType;
@@ -152,7 +152,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getRegionCode() : ?string
+    public function getRegionCode(): ?string
     {
         return $this->regionCode;
     }
@@ -161,7 +161,7 @@ class Product
      * @param null | string $regionCode
      * @return static
      */
-    public function withRegionCode(?string $regionCode) : static
+    public function withRegionCode(?string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -172,7 +172,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getRepeat() : ?string
+    public function getRepeat(): ?string
     {
         return $this->repeat;
     }
@@ -181,7 +181,7 @@ class Product
      * @param null | string $repeat
      * @return static
      */
-    public function withRepeat(?string $repeat) : static
+    public function withRepeat(?string $repeat): static
     {
         $new = clone $this;
         $new->repeat = $repeat;
@@ -192,7 +192,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getShortcut() : ?string
+    public function getShortcut(): ?string
     {
         return $this->shortcut;
     }
@@ -201,7 +201,7 @@ class Product
      * @param null | string $shortcut
      * @return static
      */
-    public function withShortcut(?string $shortcut) : static
+    public function withShortcut(?string $shortcut): static
     {
         $new = clone $this;
         $new->shortcut = $shortcut;
@@ -212,7 +212,7 @@ class Product
     /**
      * @return null | string
      */
-    public function getUsageInfo() : ?string
+    public function getUsageInfo(): ?string
     {
         return $this->usageInfo;
     }
@@ -221,7 +221,7 @@ class Product
      * @param null | string $usageInfo
      * @return static
      */
-    public function withUsageInfo(?string $usageInfo) : static
+    public function withUsageInfo(?string $usageInfo): static
     {
         $new = clone $this;
         $new->usageInfo = $usageInfo;

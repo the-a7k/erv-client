@@ -17,7 +17,7 @@ class LoginResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -26,7 +26,7 @@ class LoginResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;
@@ -37,7 +37,7 @@ class LoginResp
     /**
      * @return null | string
      */
-    public function getUserUniqueId() : ?string
+    public function getUserUniqueId(): ?string
     {
         return $this->userUniqueId;
     }
@@ -46,7 +46,7 @@ class LoginResp
      * @param null | string $userUniqueId
      * @return static
      */
-    public function withUserUniqueId(?string $userUniqueId) : static
+    public function withUserUniqueId(?string $userUniqueId): static
     {
         $new = clone $this;
         $new->userUniqueId = $userUniqueId;

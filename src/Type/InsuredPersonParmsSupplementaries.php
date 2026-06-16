@@ -2,7 +2,7 @@
 
 namespace ErvClient\Type;
 
-class Supplementaries
+class InsuredPersonParmsSupplementaries
 {
     /**
      * @var non-empty-array<int<0,max>, string>
@@ -12,7 +12,7 @@ class Supplementaries
     /**
      * @return non-empty-array<int<0,max>, string>
      */
-    public function getSupplementary() : array
+    public function getSupplementary(): array
     {
         return $this->supplementary;
     }
@@ -21,7 +21,7 @@ class Supplementaries
      * @param non-empty-array<int<0,max>, string> $supplementary
      * @return static
      */
-    public function withSupplementary(array $supplementary) : static
+    public function withSupplementary(array $supplementary): static
     {
         $new = clone $this;
         $new->supplementary = $supplementary;

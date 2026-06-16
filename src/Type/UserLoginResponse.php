@@ -14,7 +14,7 @@ class UserLoginResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\LoginResp
      */
-    public function getReturn() : ?\ErvClient\Type\LoginResp
+    public function getReturn(): ?\ErvClient\Type\LoginResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class UserLoginResponse implements ResultInterface
      * @param null | \ErvClient\Type\LoginResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\LoginResp $return) : static
+    public function withReturn(?\ErvClient\Type\LoginResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

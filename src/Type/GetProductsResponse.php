@@ -14,7 +14,7 @@ class GetProductsResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\ProductsResp
      */
-    public function getReturn() : ?\ErvClient\Type\ProductsResp
+    public function getReturn(): ?\ErvClient\Type\ProductsResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class GetProductsResponse implements ResultInterface
      * @param null | \ErvClient\Type\ProductsResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\ProductsResp $return) : static
+    public function withReturn(?\ErvClient\Type\ProductsResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

@@ -31,7 +31,7 @@ class GetPolicyInfo implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -40,7 +40,7 @@ class GetPolicyInfo implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -51,7 +51,7 @@ class GetPolicyInfo implements RequestInterface
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -60,7 +60,7 @@ class GetPolicyInfo implements RequestInterface
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;

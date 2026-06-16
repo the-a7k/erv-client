@@ -87,7 +87,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getCity() : ?string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -96,7 +96,7 @@ class PolicyHolderParms
      * @param null | string $city
      * @return static
      */
-    public function withCity(?string $city) : static
+    public function withCity(?string $city): static
     {
         $new = clone $this;
         $new->city = $city;
@@ -107,7 +107,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getCompName() : ?string
+    public function getCompName(): ?string
     {
         return $this->compName;
     }
@@ -116,7 +116,7 @@ class PolicyHolderParms
      * @param null | string $compName
      * @return static
      */
-    public function withCompName(?string $compName) : static
+    public function withCompName(?string $compName): static
     {
         $new = clone $this;
         $new->compName = $compName;
@@ -127,7 +127,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getCountry() : ?string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
@@ -136,7 +136,7 @@ class PolicyHolderParms
      * @param null | string $country
      * @return static
      */
-    public function withCountry(?string $country) : static
+    public function withCountry(?string $country): static
     {
         $new = clone $this;
         $new->country = $country;
@@ -147,7 +147,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getEmail() : ?string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -156,7 +156,7 @@ class PolicyHolderParms
      * @param null | string $email
      * @return static
      */
-    public function withEmail(?string $email) : static
+    public function withEmail(?string $email): static
     {
         $new = clone $this;
         $new->email = $email;
@@ -167,7 +167,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getFax() : ?string
+    public function getFax(): ?string
     {
         return $this->fax;
     }
@@ -176,7 +176,7 @@ class PolicyHolderParms
      * @param null | string $fax
      * @return static
      */
-    public function withFax(?string $fax) : static
+    public function withFax(?string $fax): static
     {
         $new = clone $this;
         $new->fax = $fax;
@@ -187,7 +187,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getIco() : ?string
+    public function getIco(): ?string
     {
         return $this->ico;
     }
@@ -196,7 +196,7 @@ class PolicyHolderParms
      * @param null | string $ico
      * @return static
      */
-    public function withIco(?string $ico) : static
+    public function withIco(?string $ico): static
     {
         $new = clone $this;
         $new->ico = $ico;
@@ -207,7 +207,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -216,7 +216,7 @@ class PolicyHolderParms
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -227,7 +227,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getNumber() : ?string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
@@ -236,7 +236,7 @@ class PolicyHolderParms
      * @param null | string $number
      * @return static
      */
-    public function withNumber(?string $number) : static
+    public function withNumber(?string $number): static
     {
         $new = clone $this;
         $new->number = $number;
@@ -247,7 +247,7 @@ class PolicyHolderParms
     /**
      * @return bool
      */
-    public function getIsPerson() : bool
+    public function getIsPerson(): bool
     {
         return $this->isPerson;
     }
@@ -256,7 +256,7 @@ class PolicyHolderParms
      * @param bool $isPerson
      * @return static
      */
-    public function withIsPerson(bool $isPerson) : static
+    public function withIsPerson(bool $isPerson): static
     {
         $new = clone $this;
         $new->isPerson = $isPerson;
@@ -267,7 +267,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getPhone() : ?string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -276,7 +276,7 @@ class PolicyHolderParms
      * @param null | string $phone
      * @return static
      */
-    public function withPhone(?string $phone) : static
+    public function withPhone(?string $phone): static
     {
         $new = clone $this;
         $new->phone = $phone;
@@ -287,7 +287,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getPin() : ?string
+    public function getPin(): ?string
     {
         return $this->pin;
     }
@@ -296,7 +296,7 @@ class PolicyHolderParms
      * @param null | string $pin
      * @return static
      */
-    public function withPin(?string $pin) : static
+    public function withPin(?string $pin): static
     {
         $new = clone $this;
         $new->pin = $pin;
@@ -307,7 +307,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getSex() : ?string
+    public function getSex(): ?string
     {
         return $this->sex;
     }
@@ -316,7 +316,7 @@ class PolicyHolderParms
      * @param null | string $sex
      * @return static
      */
-    public function withSex(?string $sex) : static
+    public function withSex(?string $sex): static
     {
         $new = clone $this;
         $new->sex = $sex;
@@ -327,7 +327,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getStreet() : ?string
+    public function getStreet(): ?string
     {
         return $this->street;
     }
@@ -336,7 +336,7 @@ class PolicyHolderParms
      * @param null | string $street
      * @return static
      */
-    public function withStreet(?string $street) : static
+    public function withStreet(?string $street): static
     {
         $new = clone $this;
         $new->street = $street;
@@ -347,7 +347,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getSurname() : ?string
+    public function getSurname(): ?string
     {
         return $this->surname;
     }
@@ -356,7 +356,7 @@ class PolicyHolderParms
      * @param null | string $surname
      * @return static
      */
-    public function withSurname(?string $surname) : static
+    public function withSurname(?string $surname): static
     {
         $new = clone $this;
         $new->surname = $surname;
@@ -367,7 +367,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getTitle() : ?string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -376,7 +376,7 @@ class PolicyHolderParms
      * @param null | string $title
      * @return static
      */
-    public function withTitle(?string $title) : static
+    public function withTitle(?string $title): static
     {
         $new = clone $this;
         $new->title = $title;
@@ -387,7 +387,7 @@ class PolicyHolderParms
     /**
      * @return null | string
      */
-    public function getZip() : ?string
+    public function getZip(): ?string
     {
         return $this->zip;
     }
@@ -396,7 +396,7 @@ class PolicyHolderParms
      * @param null | string $zip
      * @return static
      */
-    public function withZip(?string $zip) : static
+    public function withZip(?string $zip): static
     {
         $new = clone $this;
         $new->zip = $zip;

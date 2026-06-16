@@ -14,7 +14,7 @@ class GetPolicyInfoResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\PolicyInfoResp
      */
-    public function getReturn() : ?\ErvClient\Type\PolicyInfoResp
+    public function getReturn(): ?\ErvClient\Type\PolicyInfoResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class GetPolicyInfoResponse implements ResultInterface
      * @param null | \ErvClient\Type\PolicyInfoResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\PolicyInfoResp $return) : static
+    public function withReturn(?\ErvClient\Type\PolicyInfoResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

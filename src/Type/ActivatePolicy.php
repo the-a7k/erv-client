@@ -38,7 +38,7 @@ class ActivatePolicy implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -47,7 +47,7 @@ class ActivatePolicy implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -58,7 +58,7 @@ class ActivatePolicy implements RequestInterface
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -67,7 +67,7 @@ class ActivatePolicy implements RequestInterface
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;
@@ -78,7 +78,7 @@ class ActivatePolicy implements RequestInterface
     /**
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -87,7 +87,7 @@ class ActivatePolicy implements RequestInterface
      * @param string $currency
      * @return static
      */
-    public function withCurrency(string $currency) : static
+    public function withCurrency(string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;

@@ -17,7 +17,7 @@ class PolicyInfoResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -26,7 +26,7 @@ class PolicyInfoResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;
@@ -37,7 +37,7 @@ class PolicyInfoResp
     /**
      * @return null | \ErvClient\Type\PolicyInfo
      */
-    public function getPolicyInfo() : ?\ErvClient\Type\PolicyInfo
+    public function getPolicyInfo(): ?\ErvClient\Type\PolicyInfo
     {
         return $this->policyInfo;
     }
@@ -46,7 +46,7 @@ class PolicyInfoResp
      * @param null | \ErvClient\Type\PolicyInfo $policyInfo
      * @return static
      */
-    public function withPolicyInfo(?\ErvClient\Type\PolicyInfo $policyInfo) : static
+    public function withPolicyInfo(?\ErvClient\Type\PolicyInfo $policyInfo): static
     {
         $new = clone $this;
         $new->policyInfo = $policyInfo;

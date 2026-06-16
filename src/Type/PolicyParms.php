@@ -10,9 +10,9 @@ class PolicyParms
     private ?string $destination = null;
 
     /**
-     * @var \ErvClient\Type\Insureds
+     * @var \ErvClient\Type\PolicyParmsInsureds
      */
-    private \ErvClient\Type\Insureds $insureds;
+    private \ErvClient\Type\PolicyParmsInsureds $insureds;
 
     /**
      * @var null | string
@@ -67,7 +67,7 @@ class PolicyParms
     /**
      * @return null | string
      */
-    public function getDestination() : ?string
+    public function getDestination(): ?string
     {
         return $this->destination;
     }
@@ -76,7 +76,7 @@ class PolicyParms
      * @param null | string $destination
      * @return static
      */
-    public function withDestination(?string $destination) : static
+    public function withDestination(?string $destination): static
     {
         $new = clone $this;
         $new->destination = $destination;
@@ -85,18 +85,18 @@ class PolicyParms
     }
 
     /**
-     * @return \ErvClient\Type\Insureds
+     * @return \ErvClient\Type\PolicyParmsInsureds
      */
-    public function getInsureds() : \ErvClient\Type\Insureds
+    public function getInsureds(): \ErvClient\Type\PolicyParmsInsureds
     {
         return $this->insureds;
     }
 
     /**
-     * @param \ErvClient\Type\Insureds $insureds
+     * @param \ErvClient\Type\PolicyParmsInsureds $insureds
      * @return static
      */
-    public function withInsureds(\ErvClient\Type\Insureds $insureds) : static
+    public function withInsureds(\ErvClient\Type\PolicyParmsInsureds $insureds): static
     {
         $new = clone $this;
         $new->insureds = $insureds;
@@ -107,7 +107,7 @@ class PolicyParms
     /**
      * @return null | string
      */
-    public function getIssuedOn() : ?string
+    public function getIssuedOn(): ?string
     {
         return $this->issuedOn;
     }
@@ -116,7 +116,7 @@ class PolicyParms
      * @param null | string $issuedOn
      * @return static
      */
-    public function withIssuedOn(?string $issuedOn) : static
+    public function withIssuedOn(?string $issuedOn): static
     {
         $new = clone $this;
         $new->issuedOn = $issuedOn;
@@ -127,7 +127,7 @@ class PolicyParms
     /**
      * @return string
      */
-    public function getLastDay() : string
+    public function getLastDay(): string
     {
         return $this->lastDay;
     }
@@ -136,7 +136,7 @@ class PolicyParms
      * @param string $lastDay
      * @return static
      */
-    public function withLastDay(string $lastDay) : static
+    public function withLastDay(string $lastDay): static
     {
         $new = clone $this;
         $new->lastDay = $lastDay;
@@ -147,7 +147,7 @@ class PolicyParms
     /**
      * @return null | string
      */
-    public function getOfficeID() : ?string
+    public function getOfficeID(): ?string
     {
         return $this->officeID;
     }
@@ -156,7 +156,7 @@ class PolicyParms
      * @param null | string $officeID
      * @return static
      */
-    public function withOfficeID(?string $officeID) : static
+    public function withOfficeID(?string $officeID): static
     {
         $new = clone $this;
         $new->officeID = $officeID;
@@ -167,7 +167,7 @@ class PolicyParms
     /**
      * @return bool
      */
-    public function getOrganized() : bool
+    public function getOrganized(): bool
     {
         return $this->organized;
     }
@@ -176,7 +176,7 @@ class PolicyParms
      * @param bool $organized
      * @return static
      */
-    public function withOrganized(bool $organized) : static
+    public function withOrganized(bool $organized): static
     {
         $new = clone $this;
         $new->organized = $organized;
@@ -187,7 +187,7 @@ class PolicyParms
     /**
      * @return \ErvClient\Type\PolicyHolderParms
      */
-    public function getPolicyHolder() : \ErvClient\Type\PolicyHolderParms
+    public function getPolicyHolder(): \ErvClient\Type\PolicyHolderParms
     {
         return $this->policyHolder;
     }
@@ -196,7 +196,7 @@ class PolicyParms
      * @param \ErvClient\Type\PolicyHolderParms $policyHolder
      * @return static
      */
-    public function withPolicyHolder(\ErvClient\Type\PolicyHolderParms $policyHolder) : static
+    public function withPolicyHolder(\ErvClient\Type\PolicyHolderParms $policyHolder): static
     {
         $new = clone $this;
         $new->policyHolder = $policyHolder;
@@ -207,7 +207,7 @@ class PolicyParms
     /**
      * @return int
      */
-    public function getProductCode() : int
+    public function getProductCode(): int
     {
         return $this->productCode;
     }
@@ -216,7 +216,7 @@ class PolicyParms
      * @param int $productCode
      * @return static
      */
-    public function withProductCode(int $productCode) : static
+    public function withProductCode(int $productCode): static
     {
         $new = clone $this;
         $new->productCode = $productCode;
@@ -227,7 +227,7 @@ class PolicyParms
     /**
      * @return string
      */
-    public function getRegionCode() : string
+    public function getRegionCode(): string
     {
         return $this->regionCode;
     }
@@ -236,7 +236,7 @@ class PolicyParms
      * @param string $regionCode
      * @return static
      */
-    public function withRegionCode(string $regionCode) : static
+    public function withRegionCode(string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -247,7 +247,7 @@ class PolicyParms
     /**
      * @return null | string
      */
-    public function getSeller() : ?string
+    public function getSeller(): ?string
     {
         return $this->seller;
     }
@@ -256,7 +256,7 @@ class PolicyParms
      * @param null | string $seller
      * @return static
      */
-    public function withSeller(?string $seller) : static
+    public function withSeller(?string $seller): static
     {
         $new = clone $this;
         $new->seller = $seller;
@@ -267,7 +267,7 @@ class PolicyParms
     /**
      * @return string
      */
-    public function getStartDay() : string
+    public function getStartDay(): string
     {
         return $this->startDay;
     }
@@ -276,7 +276,7 @@ class PolicyParms
      * @param string $startDay
      * @return static
      */
-    public function withStartDay(string $startDay) : static
+    public function withStartDay(string $startDay): static
     {
         $new = clone $this;
         $new->startDay = $startDay;
@@ -287,7 +287,7 @@ class PolicyParms
     /**
      * @return null | string
      */
-    public function getTransport() : ?string
+    public function getTransport(): ?string
     {
         return $this->transport;
     }
@@ -296,7 +296,7 @@ class PolicyParms
      * @param null | string $transport
      * @return static
      */
-    public function withTransport(?string $transport) : static
+    public function withTransport(?string $transport): static
     {
         $new = clone $this;
         $new->transport = $transport;

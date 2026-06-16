@@ -40,9 +40,9 @@ class InsuredPersonParms
     private string $tariff;
 
     /**
-     * @var null | \ErvClient\Type\Supplementaries
+     * @var null | \ErvClient\Type\InsuredPersonParmsSupplementaries
      */
-    private ?\ErvClient\Type\Supplementaries $supplementaries = null;
+    private ?\ErvClient\Type\InsuredPersonParmsSupplementaries $supplementaries = null;
 
     /**
      * @var null | string
@@ -62,7 +62,7 @@ class InsuredPersonParms
     /**
      * @return float
      */
-    public function getCancellationAmount() : float
+    public function getCancellationAmount(): float
     {
         return $this->cancellationAmount;
     }
@@ -71,7 +71,7 @@ class InsuredPersonParms
      * @param float $cancellationAmount
      * @return static
      */
-    public function withCancellationAmount(float $cancellationAmount) : static
+    public function withCancellationAmount(float $cancellationAmount): static
     {
         $new = clone $this;
         $new->cancellationAmount = $cancellationAmount;
@@ -82,7 +82,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -91,7 +91,7 @@ class InsuredPersonParms
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -102,7 +102,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -111,7 +111,7 @@ class InsuredPersonParms
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -122,7 +122,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getPin() : ?string
+    public function getPin(): ?string
     {
         return $this->pin;
     }
@@ -131,7 +131,7 @@ class InsuredPersonParms
      * @param null | string $pin
      * @return static
      */
-    public function withPin(?string $pin) : static
+    public function withPin(?string $pin): static
     {
         $new = clone $this;
         $new->pin = $pin;
@@ -142,7 +142,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getSex() : ?string
+    public function getSex(): ?string
     {
         return $this->sex;
     }
@@ -151,7 +151,7 @@ class InsuredPersonParms
      * @param null | string $sex
      * @return static
      */
-    public function withSex(?string $sex) : static
+    public function withSex(?string $sex): static
     {
         $new = clone $this;
         $new->sex = $sex;
@@ -162,7 +162,7 @@ class InsuredPersonParms
     /**
      * @return string
      */
-    public function getSurname() : string
+    public function getSurname(): string
     {
         return $this->surname;
     }
@@ -171,7 +171,7 @@ class InsuredPersonParms
      * @param string $surname
      * @return static
      */
-    public function withSurname(string $surname) : static
+    public function withSurname(string $surname): static
     {
         $new = clone $this;
         $new->surname = $surname;
@@ -182,7 +182,7 @@ class InsuredPersonParms
     /**
      * @return string
      */
-    public function getTariff() : string
+    public function getTariff(): string
     {
         return $this->tariff;
     }
@@ -191,7 +191,7 @@ class InsuredPersonParms
      * @param string $tariff
      * @return static
      */
-    public function withTariff(string $tariff) : static
+    public function withTariff(string $tariff): static
     {
         $new = clone $this;
         $new->tariff = $tariff;
@@ -200,18 +200,18 @@ class InsuredPersonParms
     }
 
     /**
-     * @return null | \ErvClient\Type\Supplementaries
+     * @return null | \ErvClient\Type\InsuredPersonParmsSupplementaries
      */
-    public function getSupplementaries() : ?\ErvClient\Type\Supplementaries
+    public function getSupplementaries(): ?\ErvClient\Type\InsuredPersonParmsSupplementaries
     {
         return $this->supplementaries;
     }
 
     /**
-     * @param null | \ErvClient\Type\Supplementaries $supplementaries
+     * @param null | \ErvClient\Type\InsuredPersonParmsSupplementaries $supplementaries
      * @return static
      */
-    public function withSupplementaries(?\ErvClient\Type\Supplementaries $supplementaries) : static
+    public function withSupplementaries(?\ErvClient\Type\InsuredPersonParmsSupplementaries $supplementaries): static
     {
         $new = clone $this;
         $new->supplementaries = $supplementaries;
@@ -222,7 +222,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getItemId() : ?string
+    public function getItemId(): ?string
     {
         return $this->itemId;
     }
@@ -231,7 +231,7 @@ class InsuredPersonParms
      * @param null | string $itemId
      * @return static
      */
-    public function withItemId(?string $itemId) : static
+    public function withItemId(?string $itemId): static
     {
         $new = clone $this;
         $new->itemId = $itemId;
@@ -242,7 +242,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getItemName() : ?string
+    public function getItemName(): ?string
     {
         return $this->itemName;
     }
@@ -251,7 +251,7 @@ class InsuredPersonParms
      * @param null | string $itemName
      * @return static
      */
-    public function withItemName(?string $itemName) : static
+    public function withItemName(?string $itemName): static
     {
         $new = clone $this;
         $new->itemName = $itemName;
@@ -262,7 +262,7 @@ class InsuredPersonParms
     /**
      * @return null | string
      */
-    public function getItemDescription() : ?string
+    public function getItemDescription(): ?string
     {
         return $this->itemDescription;
     }
@@ -271,7 +271,7 @@ class InsuredPersonParms
      * @param null | string $itemDescription
      * @return static
      */
-    public function withItemDescription(?string $itemDescription) : static
+    public function withItemDescription(?string $itemDescription): static
     {
         $new = clone $this;
         $new->itemDescription = $itemDescription;

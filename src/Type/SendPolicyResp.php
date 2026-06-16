@@ -12,7 +12,7 @@ class SendPolicyResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -21,7 +21,7 @@ class SendPolicyResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;

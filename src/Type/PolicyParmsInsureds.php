@@ -2,7 +2,7 @@
 
 namespace ErvClient\Type;
 
-class Insureds
+class PolicyParmsInsureds
 {
     /**
      * @var non-empty-array<int<0,max>, \ErvClient\Type\InsuredPersonParms>
@@ -12,7 +12,7 @@ class Insureds
     /**
      * @return non-empty-array<int<0,max>, \ErvClient\Type\InsuredPersonParms>
      */
-    public function getInsured() : array
+    public function getInsured(): array
     {
         return $this->insured;
     }
@@ -21,7 +21,7 @@ class Insureds
      * @param non-empty-array<int<0,max>, \ErvClient\Type\InsuredPersonParms> $insured
      * @return static
      */
-    public function withInsured(array $insured) : static
+    public function withInsured(array $insured): static
     {
         $new = clone $this;
         $new->insured = $insured;

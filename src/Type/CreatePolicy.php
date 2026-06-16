@@ -45,7 +45,7 @@ class CreatePolicy implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -54,7 +54,7 @@ class CreatePolicy implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -65,7 +65,7 @@ class CreatePolicy implements RequestInterface
     /**
      * @return \ErvClient\Type\PolicyParms
      */
-    public function getPolicyParms() : \ErvClient\Type\PolicyParms
+    public function getPolicyParms(): \ErvClient\Type\PolicyParms
     {
         return $this->policyParms;
     }
@@ -74,7 +74,7 @@ class CreatePolicy implements RequestInterface
      * @param \ErvClient\Type\PolicyParms $policyParms
      * @return static
      */
-    public function withPolicyParms(\ErvClient\Type\PolicyParms $policyParms) : static
+    public function withPolicyParms(\ErvClient\Type\PolicyParms $policyParms): static
     {
         $new = clone $this;
         $new->policyParms = $policyParms;
@@ -85,7 +85,7 @@ class CreatePolicy implements RequestInterface
     /**
      * @return bool
      */
-    public function getActivate() : bool
+    public function getActivate(): bool
     {
         return $this->activate;
     }
@@ -94,7 +94,7 @@ class CreatePolicy implements RequestInterface
      * @param bool $activate
      * @return static
      */
-    public function withActivate(bool $activate) : static
+    public function withActivate(bool $activate): static
     {
         $new = clone $this;
         $new->activate = $activate;
@@ -105,7 +105,7 @@ class CreatePolicy implements RequestInterface
     /**
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -114,7 +114,7 @@ class CreatePolicy implements RequestInterface
      * @param string $currency
      * @return static
      */
-    public function withCurrency(string $currency) : static
+    public function withCurrency(string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;

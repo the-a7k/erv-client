@@ -57,7 +57,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getCode() : ?string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -66,7 +66,7 @@ class SuitableProductOffer
      * @param null | string $code
      * @return static
      */
-    public function withCode(?string $code) : static
+    public function withCode(?string $code): static
     {
         $new = clone $this;
         $new->code = $code;
@@ -77,7 +77,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -86,7 +86,7 @@ class SuitableProductOffer
      * @param null | string $description
      * @return static
      */
-    public function withDescription(?string $description) : static
+    public function withDescription(?string $description): static
     {
         $new = clone $this;
         $new->description = $description;
@@ -97,7 +97,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -106,7 +106,7 @@ class SuitableProductOffer
      * @param null | string $name
      * @return static
      */
-    public function withName(?string $name) : static
+    public function withName(?string $name): static
     {
         $new = clone $this;
         $new->name = $name;
@@ -117,7 +117,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getRegionCode() : ?string
+    public function getRegionCode(): ?string
     {
         return $this->regionCode;
     }
@@ -126,7 +126,7 @@ class SuitableProductOffer
      * @param null | string $regionCode
      * @return static
      */
-    public function withRegionCode(?string $regionCode) : static
+    public function withRegionCode(?string $regionCode): static
     {
         $new = clone $this;
         $new->regionCode = $regionCode;
@@ -137,7 +137,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getShortcut() : ?string
+    public function getShortcut(): ?string
     {
         return $this->shortcut;
     }
@@ -146,7 +146,7 @@ class SuitableProductOffer
      * @param null | string $shortcut
      * @return static
      */
-    public function withShortcut(?string $shortcut) : static
+    public function withShortcut(?string $shortcut): static
     {
         $new = clone $this;
         $new->shortcut = $shortcut;
@@ -157,7 +157,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getDuration() : ?string
+    public function getDuration(): ?string
     {
         return $this->duration;
     }
@@ -166,7 +166,7 @@ class SuitableProductOffer
      * @param null | string $duration
      * @return static
      */
-    public function withDuration(?string $duration) : static
+    public function withDuration(?string $duration): static
     {
         $new = clone $this;
         $new->duration = $duration;
@@ -177,7 +177,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getRepeat() : ?string
+    public function getRepeat(): ?string
     {
         return $this->repeat;
     }
@@ -186,7 +186,7 @@ class SuitableProductOffer
      * @param null | string $repeat
      * @return static
      */
-    public function withRepeat(?string $repeat) : static
+    public function withRepeat(?string $repeat): static
     {
         $new = clone $this;
         $new->repeat = $repeat;
@@ -197,7 +197,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getProductType() : ?string
+    public function getProductType(): ?string
     {
         return $this->productType;
     }
@@ -206,7 +206,7 @@ class SuitableProductOffer
      * @param null | string $productType
      * @return static
      */
-    public function withProductType(?string $productType) : static
+    public function withProductType(?string $productType): static
     {
         $new = clone $this;
         $new->productType = $productType;
@@ -217,7 +217,7 @@ class SuitableProductOffer
     /**
      * @return null | string
      */
-    public function getUsageInfo() : ?string
+    public function getUsageInfo(): ?string
     {
         return $this->usageInfo;
     }
@@ -226,7 +226,7 @@ class SuitableProductOffer
      * @param null | string $usageInfo
      * @return static
      */
-    public function withUsageInfo(?string $usageInfo) : static
+    public function withUsageInfo(?string $usageInfo): static
     {
         $new = clone $this;
         $new->usageInfo = $usageInfo;
@@ -237,7 +237,7 @@ class SuitableProductOffer
     /**
      * @return null | array<int<0,max>, \ErvClient\Type\SuitableTariffGroup>
      */
-    public function getTariffGroup() : ?array
+    public function getTariffGroup(): ?array
     {
         return $this->tariffGroup;
     }
@@ -246,7 +246,7 @@ class SuitableProductOffer
      * @param null | array<int<0,max>, \ErvClient\Type\SuitableTariffGroup> $tariffGroup
      * @return static
      */
-    public function withTariffGroup(?array $tariffGroup) : static
+    public function withTariffGroup(?array $tariffGroup): static
     {
         $new = clone $this;
         $new->tariffGroup = $tariffGroup;

@@ -34,7 +34,7 @@ class GetPolicyDraft implements RequestInterface
      * @param string $language
      * @param null | string $specTemplateCode
      */
-    public function __construct(string $uniqueId, int $policyNumber, string $language, ?string $specTemplateCode)
+    public function __construct(string $uniqueId, int $policyNumber, string $language, ?string $specTemplateCode = null)
     {
         $this->uniqueId = $uniqueId;
         $this->policyNumber = $policyNumber;
@@ -45,7 +45,7 @@ class GetPolicyDraft implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -54,7 +54,7 @@ class GetPolicyDraft implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -65,7 +65,7 @@ class GetPolicyDraft implements RequestInterface
     /**
      * @return int
      */
-    public function getPolicyNumber() : int
+    public function getPolicyNumber(): int
     {
         return $this->policyNumber;
     }
@@ -74,7 +74,7 @@ class GetPolicyDraft implements RequestInterface
      * @param int $policyNumber
      * @return static
      */
-    public function withPolicyNumber(int $policyNumber) : static
+    public function withPolicyNumber(int $policyNumber): static
     {
         $new = clone $this;
         $new->policyNumber = $policyNumber;
@@ -85,7 +85,7 @@ class GetPolicyDraft implements RequestInterface
     /**
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -94,7 +94,7 @@ class GetPolicyDraft implements RequestInterface
      * @param string $language
      * @return static
      */
-    public function withLanguage(string $language) : static
+    public function withLanguage(string $language): static
     {
         $new = clone $this;
         $new->language = $language;
@@ -105,7 +105,7 @@ class GetPolicyDraft implements RequestInterface
     /**
      * @return null | string
      */
-    public function getSpecTemplateCode() : ?string
+    public function getSpecTemplateCode(): ?string
     {
         return $this->specTemplateCode;
     }
@@ -114,7 +114,7 @@ class GetPolicyDraft implements RequestInterface
      * @param null | string $specTemplateCode
      * @return static
      */
-    public function withSpecTemplateCode(?string $specTemplateCode) : static
+    public function withSpecTemplateCode(?string $specTemplateCode): static
     {
         $new = clone $this;
         $new->specTemplateCode = $specTemplateCode;

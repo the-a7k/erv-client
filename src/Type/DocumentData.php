@@ -27,7 +27,7 @@ class DocumentData
     /**
      * @return null | mixed
      */
-    public function getFileContents() : mixed
+    public function getFileContents(): mixed
     {
         return $this->fileContents;
     }
@@ -36,7 +36,7 @@ class DocumentData
      * @param null | mixed $fileContents
      * @return static
      */
-    public function withFileContents(mixed $fileContents) : static
+    public function withFileContents(mixed $fileContents): static
     {
         $new = clone $this;
         $new->fileContents = $fileContents;
@@ -47,7 +47,7 @@ class DocumentData
     /**
      * @return null | string
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -56,7 +56,7 @@ class DocumentData
      * @param null | string $fileName
      * @return static
      */
-    public function withFileName(?string $fileName) : static
+    public function withFileName(?string $fileName): static
     {
         $new = clone $this;
         $new->fileName = $fileName;
@@ -67,7 +67,7 @@ class DocumentData
     /**
      * @return null | int
      */
-    public function getFileSize() : ?int
+    public function getFileSize(): ?int
     {
         return $this->fileSize;
     }
@@ -76,7 +76,7 @@ class DocumentData
      * @param null | int $fileSize
      * @return static
      */
-    public function withFileSize(?int $fileSize) : static
+    public function withFileSize(?int $fileSize): static
     {
         $new = clone $this;
         $new->fileSize = $fileSize;
@@ -87,7 +87,7 @@ class DocumentData
     /**
      * @return null | string
      */
-    public function getMimeType() : ?string
+    public function getMimeType(): ?string
     {
         return $this->mimeType;
     }
@@ -96,7 +96,7 @@ class DocumentData
      * @param null | string $mimeType
      * @return static
      */
-    public function withMimeType(?string $mimeType) : static
+    public function withMimeType(?string $mimeType): static
     {
         $new = clone $this;
         $new->mimeType = $mimeType;

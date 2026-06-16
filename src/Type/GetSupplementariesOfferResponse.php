@@ -14,7 +14,7 @@ class GetSupplementariesOfferResponse implements ResultInterface
     /**
      * @return null | \ErvClient\Type\SupplementariesOfferResp
      */
-    public function getReturn() : ?\ErvClient\Type\SupplementariesOfferResp
+    public function getReturn(): ?\ErvClient\Type\SupplementariesOfferResp
     {
         return $this->return;
     }
@@ -23,7 +23,7 @@ class GetSupplementariesOfferResponse implements ResultInterface
      * @param null | \ErvClient\Type\SupplementariesOfferResp $return
      * @return static
      */
-    public function withReturn(?\ErvClient\Type\SupplementariesOfferResp $return) : static
+    public function withReturn(?\ErvClient\Type\SupplementariesOfferResp $return): static
     {
         $new = clone $this;
         $new->return = $return;

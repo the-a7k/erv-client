@@ -38,7 +38,7 @@ class UserLogin implements RequestInterface
     /**
      * @return string
      */
-    public function getAgentCode() : string
+    public function getAgentCode(): string
     {
         return $this->agentCode;
     }
@@ -47,7 +47,7 @@ class UserLogin implements RequestInterface
      * @param string $agentCode
      * @return static
      */
-    public function withAgentCode(string $agentCode) : static
+    public function withAgentCode(string $agentCode): static
     {
         $new = clone $this;
         $new->agentCode = $agentCode;
@@ -58,7 +58,7 @@ class UserLogin implements RequestInterface
     /**
      * @return string
      */
-    public function getUserName() : string
+    public function getUserName(): string
     {
         return $this->userName;
     }
@@ -67,7 +67,7 @@ class UserLogin implements RequestInterface
      * @param string $userName
      * @return static
      */
-    public function withUserName(string $userName) : static
+    public function withUserName(string $userName): static
     {
         $new = clone $this;
         $new->userName = $userName;
@@ -78,7 +78,7 @@ class UserLogin implements RequestInterface
     /**
      * @return string
      */
-    public function getUserPasswd() : string
+    public function getUserPasswd(): string
     {
         return $this->userPasswd;
     }
@@ -87,7 +87,7 @@ class UserLogin implements RequestInterface
      * @param string $userPasswd
      * @return static
      */
-    public function withUserPasswd(string $userPasswd) : static
+    public function withUserPasswd(string $userPasswd): static
     {
         $new = clone $this;
         $new->userPasswd = $userPasswd;

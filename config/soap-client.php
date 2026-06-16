@@ -2,22 +2,23 @@
 
 use Phpro\SoapClient\CodeGenerator\Assembler;
 use Phpro\SoapClient\CodeGenerator\Rules;
+use Phpro\SoapClient\CodeGenerator\Config\ClassMapConfig;
+use Phpro\SoapClient\CodeGenerator\Config\ClientConfig;
 use Phpro\SoapClient\CodeGenerator\Config\Config;
-use Soap\ExtSoapEngine\ExtSoapOptions;
-use Phpro\SoapClient\Soap\CodeGeneratorEngineFactory;
+use Phpro\SoapClient\CodeGenerator\Config\Destination;
+use Phpro\SoapClient\CodeGenerator\Config\TypeNamespaceMap;
+use Phpro\SoapClient\Soap\EngineOptions;
+use Phpro\SoapClient\Soap\DefaultEngineFactory;
 
 return Config::create()
-    ->setEngine($engine = CodeGeneratorEngineFactory::create(
-        'https://secure.ervpojistovna.cz/wserv35_verifycz/InsuranceService?wsdl'
+    ->setEngine($engine = DefaultEngineFactory::create(
+        EngineOptions::defaults('https://secure.ervpojistovna.cz/wserv35_verifycz/InsuranceService?wsdl')
     ))
-    ->setTypeDestination('src/Type')
-    ->setTypeNamespace('ErvClient\Type')
-    ->setClientDestination('src')
-    ->setClientName('ErvClient')
-    ->setClientNamespace('ErvClient')
-    ->setClassMapDestination('src')
-    ->setClassMapName('ErvClassmap')
-    ->setClassMapNamespace('ErvClient')
+    ->setTypeNamespaceMap(
+        TypeNamespaceMap::create(new Destination('src/Type', 'ErvClient\Type'))
+    )
+    ->setClient(new ClientConfig('ErvClient', new Destination('src', 'ErvClient')))
+    ->setClassMap(new ClassMapConfig('ErvClassmap', new Destination('src', 'ErvClient')))
     ->addRule(new Rules\AssembleRule(new Assembler\GetterAssembler(new Assembler\GetterAssemblerOptions())))
     ->addRule(new Rules\AssembleRule(new Assembler\ImmutableSetterAssembler(
         new Assembler\ImmutableSetterAssemblerOptions()

@@ -20,9 +20,9 @@ class InsuredPersonCalculatePremiumParms
     private string $pin;
 
     /**
-     * @var null | \ErvClient\Type\Supplementaries
+     * @var null | \ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries
      */
-    private ?\ErvClient\Type\Supplementaries $supplementaries = null;
+    private ?\ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries $supplementaries = null;
 
     /**
      * @var string
@@ -32,7 +32,7 @@ class InsuredPersonCalculatePremiumParms
     /**
      * @return float
      */
-    public function getCancellationAmount() : float
+    public function getCancellationAmount(): float
     {
         return $this->cancellationAmount;
     }
@@ -41,7 +41,7 @@ class InsuredPersonCalculatePremiumParms
      * @param float $cancellationAmount
      * @return static
      */
-    public function withCancellationAmount(float $cancellationAmount) : static
+    public function withCancellationAmount(float $cancellationAmount): static
     {
         $new = clone $this;
         $new->cancellationAmount = $cancellationAmount;
@@ -52,7 +52,7 @@ class InsuredPersonCalculatePremiumParms
     /**
      * @return null | string
      */
-    public function getCurrency() : ?string
+    public function getCurrency(): ?string
     {
         return $this->currency;
     }
@@ -61,7 +61,7 @@ class InsuredPersonCalculatePremiumParms
      * @param null | string $currency
      * @return static
      */
-    public function withCurrency(?string $currency) : static
+    public function withCurrency(?string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -72,7 +72,7 @@ class InsuredPersonCalculatePremiumParms
     /**
      * @return string
      */
-    public function getPin() : string
+    public function getPin(): string
     {
         return $this->pin;
     }
@@ -81,7 +81,7 @@ class InsuredPersonCalculatePremiumParms
      * @param string $pin
      * @return static
      */
-    public function withPin(string $pin) : static
+    public function withPin(string $pin): static
     {
         $new = clone $this;
         $new->pin = $pin;
@@ -90,18 +90,18 @@ class InsuredPersonCalculatePremiumParms
     }
 
     /**
-     * @return null | \ErvClient\Type\Supplementaries
+     * @return null | \ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries
      */
-    public function getSupplementaries() : ?\ErvClient\Type\Supplementaries
+    public function getSupplementaries(): ?\ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries
     {
         return $this->supplementaries;
     }
 
     /**
-     * @param null | \ErvClient\Type\Supplementaries $supplementaries
+     * @param null | \ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries $supplementaries
      * @return static
      */
-    public function withSupplementaries(?\ErvClient\Type\Supplementaries $supplementaries) : static
+    public function withSupplementaries(?\ErvClient\Type\InsuredPersonCalculatePremiumParmsSupplementaries $supplementaries): static
     {
         $new = clone $this;
         $new->supplementaries = $supplementaries;
@@ -112,7 +112,7 @@ class InsuredPersonCalculatePremiumParms
     /**
      * @return string
      */
-    public function getTariff() : string
+    public function getTariff(): string
     {
         return $this->tariff;
     }
@@ -121,7 +121,7 @@ class InsuredPersonCalculatePremiumParms
      * @param string $tariff
      * @return static
      */
-    public function withTariff(string $tariff) : static
+    public function withTariff(string $tariff): static
     {
         $new = clone $this;
         $new->tariff = $tariff;

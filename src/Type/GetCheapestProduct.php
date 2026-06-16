@@ -66,7 +66,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return string
      */
-    public function getUniqueId() : string
+    public function getUniqueId(): string
     {
         return $this->uniqueId;
     }
@@ -75,7 +75,7 @@ class GetCheapestProduct implements RequestInterface
      * @param string $uniqueId
      * @return static
      */
-    public function withUniqueId(string $uniqueId) : static
+    public function withUniqueId(string $uniqueId): static
     {
         $new = clone $this;
         $new->uniqueId = $uniqueId;
@@ -86,7 +86,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return int
      */
-    public function getInsuredDays() : int
+    public function getInsuredDays(): int
     {
         return $this->insuredDays;
     }
@@ -95,7 +95,7 @@ class GetCheapestProduct implements RequestInterface
      * @param int $insuredDays
      * @return static
      */
-    public function withInsuredDays(int $insuredDays) : static
+    public function withInsuredDays(int $insuredDays): static
     {
         $new = clone $this;
         $new->insuredDays = $insuredDays;
@@ -106,7 +106,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return string
      */
-    public function getRegion() : string
+    public function getRegion(): string
     {
         return $this->region;
     }
@@ -115,7 +115,7 @@ class GetCheapestProduct implements RequestInterface
      * @param string $region
      * @return static
      */
-    public function withRegion(string $region) : static
+    public function withRegion(string $region): static
     {
         $new = clone $this;
         $new->region = $region;
@@ -126,7 +126,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return int
      */
-    public function getInsuredsCount() : int
+    public function getInsuredsCount(): int
     {
         return $this->insuredsCount;
     }
@@ -135,7 +135,7 @@ class GetCheapestProduct implements RequestInterface
      * @param int $insuredsCount
      * @return static
      */
-    public function withInsuredsCount(int $insuredsCount) : static
+    public function withInsuredsCount(int $insuredsCount): static
     {
         $new = clone $this;
         $new->insuredsCount = $insuredsCount;
@@ -146,7 +146,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return string
      */
-    public function getTariffType() : string
+    public function getTariffType(): string
     {
         return $this->tariffType;
     }
@@ -155,7 +155,7 @@ class GetCheapestProduct implements RequestInterface
      * @param string $tariffType
      * @return static
      */
-    public function withTariffType(string $tariffType) : static
+    public function withTariffType(string $tariffType): static
     {
         $new = clone $this;
         $new->tariffType = $tariffType;
@@ -166,7 +166,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -175,7 +175,7 @@ class GetCheapestProduct implements RequestInterface
      * @param string $currency
      * @return static
      */
-    public function withCurrency(string $currency) : static
+    public function withCurrency(string $currency): static
     {
         $new = clone $this;
         $new->currency = $currency;
@@ -186,7 +186,7 @@ class GetCheapestProduct implements RequestInterface
     /**
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -195,7 +195,7 @@ class GetCheapestProduct implements RequestInterface
      * @param string $language
      * @return static
      */
-    public function withLanguage(string $language) : static
+    public function withLanguage(string $language): static
     {
         $new = clone $this;
         $new->language = $language;

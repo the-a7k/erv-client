@@ -6,17 +6,25 @@ use ErvClient\ErvClient;
 use ErvClient\ErvClassmap;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Phpro\SoapClient\Soap\DefaultEngineFactory;
-use Soap\ExtSoapEngine\ExtSoapOptions;
+use Phpro\SoapClient\Soap\EngineOptions;
 use Phpro\SoapClient\Caller\EventDispatchingCaller;
 use Phpro\SoapClient\Caller\EngineCaller;
+use Soap\Encoding\EncoderRegistry;
 
 class ErvClientFactory
 {
-    public static function factory(string $wsdl) : \ErvClient\ErvClient
+    /**
+     * @param non-empty-string $wsdl
+     */
+    public static function factory(string $wsdl): \ErvClient\ErvClient
     {
         $engine = DefaultEngineFactory::create(
-            ExtSoapOptions::defaults($wsdl, [])
-                ->withClassMap(ErvClassmap::getCollection())
+            EngineOptions::defaults($wsdl)
+                ->withEncoderRegistry(
+                    EncoderRegistry::default()
+                        ->addClassMapCollection(ErvClassmap::types())
+                        ->addBackedEnumClassMapCollection(ErvClassmap::enums())
+                )
         );
 
         $eventDispatcher = new EventDispatcher();

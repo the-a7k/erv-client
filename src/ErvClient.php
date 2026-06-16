@@ -2,7 +2,6 @@
 
 namespace ErvClient;
 
-use Phpro\SoapClient\Caller\Caller;
 use ErvClient\Type;
 use Phpro\SoapClient\Type\ResultInterface;
 use Phpro\SoapClient\Exception\SoapException;
@@ -10,10 +9,7 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class ErvClient
 {
-    /**
-     * @var Caller
-     */
-    private $caller;
+    private \Phpro\SoapClient\Caller\Caller $caller;
 
     public function __construct(\Phpro\SoapClient\Caller\Caller $caller)
     {
@@ -25,7 +21,7 @@ class ErvClient
      * @return ResultInterface & Type\CancelPolicyResponse
      * @throws SoapException
      */
-    public function cancelPolicy(\ErvClient\Type\CancelPolicy $parameters) : \ErvClient\Type\CancelPolicyResponse
+    public function cancelPolicy(\ErvClient\Type\CancelPolicy $parameters): \ErvClient\Type\CancelPolicyResponse
     {
         $response = ($this->caller)('cancelPolicy', $parameters);
 
@@ -40,7 +36,7 @@ class ErvClient
      * @return ResultInterface & Type\SendPolicyDraftResponse
      * @throws SoapException
      */
-    public function sendPolicyDraft(\ErvClient\Type\SendPolicyDraft $parameters) : \ErvClient\Type\SendPolicyDraftResponse
+    public function sendPolicyDraft(\ErvClient\Type\SendPolicyDraft $parameters): \ErvClient\Type\SendPolicyDraftResponse
     {
         $response = ($this->caller)('sendPolicyDraft', $parameters);
 
@@ -55,7 +51,7 @@ class ErvClient
      * @return ResultInterface & Type\SendPolicyAgreementResponse
      * @throws SoapException
      */
-    public function sendPolicyAgreement(\ErvClient\Type\SendPolicyAgreement $parameters) : \ErvClient\Type\SendPolicyAgreementResponse
+    public function sendPolicyAgreement(\ErvClient\Type\SendPolicyAgreement $parameters): \ErvClient\Type\SendPolicyAgreementResponse
     {
         $response = ($this->caller)('sendPolicyAgreement', $parameters);
 
@@ -70,7 +66,7 @@ class ErvClient
      * @return ResultInterface & Type\GetPolicyInfoResponse
      * @throws SoapException
      */
-    public function getPolicyInfo(\ErvClient\Type\GetPolicyInfo $parameters) : \ErvClient\Type\GetPolicyInfoResponse
+    public function getPolicyInfo(\ErvClient\Type\GetPolicyInfo $parameters): \ErvClient\Type\GetPolicyInfoResponse
     {
         $response = ($this->caller)('getPolicyInfo', $parameters);
 
@@ -85,7 +81,7 @@ class ErvClient
      * @return ResultInterface & Type\CreatePolicyResponse
      * @throws SoapException
      */
-    public function createPolicy(\ErvClient\Type\CreatePolicy $parameters) : \ErvClient\Type\CreatePolicyResponse
+    public function createPolicy(\ErvClient\Type\CreatePolicy $parameters): \ErvClient\Type\CreatePolicyResponse
     {
         $response = ($this->caller)('createPolicy', $parameters);
 
@@ -100,7 +96,7 @@ class ErvClient
      * @return ResultInterface & Type\GetSuitableProductsOfferResponse
      * @throws SoapException
      */
-    public function getSuitableProductsOffer(\ErvClient\Type\GetSuitableProductsOffer $parameters) : \ErvClient\Type\GetSuitableProductsOfferResponse
+    public function getSuitableProductsOffer(\ErvClient\Type\GetSuitableProductsOffer $parameters): \ErvClient\Type\GetSuitableProductsOfferResponse
     {
         $response = ($this->caller)('getSuitableProductsOffer', $parameters);
 
@@ -115,7 +111,7 @@ class ErvClient
      * @return ResultInterface & Type\CalculatePolicyPremiumResponse
      * @throws SoapException
      */
-    public function calculatePolicyPremium(\ErvClient\Type\CalculatePolicyPremium $parameters) : \ErvClient\Type\CalculatePolicyPremiumResponse
+    public function calculatePolicyPremium(\ErvClient\Type\CalculatePolicyPremium $parameters): \ErvClient\Type\CalculatePolicyPremiumResponse
     {
         $response = ($this->caller)('calculatePolicyPremium', $parameters);
 
@@ -130,7 +126,7 @@ class ErvClient
      * @return ResultInterface & Type\GetCheapestProductResponse
      * @throws SoapException
      */
-    public function getCheapestProduct(\ErvClient\Type\GetCheapestProduct $parameters) : \ErvClient\Type\GetCheapestProductResponse
+    public function getCheapestProduct(\ErvClient\Type\GetCheapestProduct $parameters): \ErvClient\Type\GetCheapestProductResponse
     {
         $response = ($this->caller)('getCheapestProduct', $parameters);
 
@@ -145,7 +141,7 @@ class ErvClient
      * @return ResultInterface & Type\GetPolicyDraftResponse
      * @throws SoapException
      */
-    public function getPolicyDraft(\ErvClient\Type\GetPolicyDraft $parameters) : \ErvClient\Type\GetPolicyDraftResponse
+    public function getPolicyDraft(\ErvClient\Type\GetPolicyDraft $parameters): \ErvClient\Type\GetPolicyDraftResponse
     {
         $response = ($this->caller)('getPolicyDraft', $parameters);
 
@@ -160,7 +156,7 @@ class ErvClient
      * @return ResultInterface & Type\GetCompleteProductsOfferResponse
      * @throws SoapException
      */
-    public function getCompleteProductsOffer(\ErvClient\Type\GetCompleteProductsOffer $parameters) : \ErvClient\Type\GetCompleteProductsOfferResponse
+    public function getCompleteProductsOffer(\ErvClient\Type\GetCompleteProductsOffer $parameters): \ErvClient\Type\GetCompleteProductsOfferResponse
     {
         $response = ($this->caller)('getCompleteProductsOffer', $parameters);
 
@@ -175,7 +171,7 @@ class ErvClient
      * @return ResultInterface & Type\GetSupplementariesOfferResponse
      * @throws SoapException
      */
-    public function getSupplementariesOffer(\ErvClient\Type\GetSupplementariesOffer $parameters) : \ErvClient\Type\GetSupplementariesOfferResponse
+    public function getSupplementariesOffer(\ErvClient\Type\GetSupplementariesOffer $parameters): \ErvClient\Type\GetSupplementariesOfferResponse
     {
         $response = ($this->caller)('getSupplementariesOffer', $parameters);
 
@@ -190,7 +186,7 @@ class ErvClient
      * @return ResultInterface & Type\GetPolicyAgreementResponse
      * @throws SoapException
      */
-    public function getPolicyAgreement(\ErvClient\Type\GetPolicyAgreement $parameters) : \ErvClient\Type\GetPolicyAgreementResponse
+    public function getPolicyAgreement(\ErvClient\Type\GetPolicyAgreement $parameters): \ErvClient\Type\GetPolicyAgreementResponse
     {
         $response = ($this->caller)('getPolicyAgreement', $parameters);
 
@@ -205,7 +201,7 @@ class ErvClient
      * @return ResultInterface & Type\UserLoginResponse
      * @throws SoapException
      */
-    public function userLogin(\ErvClient\Type\UserLogin $parameters) : \ErvClient\Type\UserLoginResponse
+    public function userLogin(\ErvClient\Type\UserLogin $parameters): \ErvClient\Type\UserLoginResponse
     {
         $response = ($this->caller)('userLogin', $parameters);
 
@@ -220,7 +216,7 @@ class ErvClient
      * @return ResultInterface & Type\GetProductsOfferResponse
      * @throws SoapException
      */
-    public function getProductsOffer(\ErvClient\Type\GetProductsOffer $parameters) : \ErvClient\Type\GetProductsOfferResponse
+    public function getProductsOffer(\ErvClient\Type\GetProductsOffer $parameters): \ErvClient\Type\GetProductsOfferResponse
     {
         $response = ($this->caller)('getProductsOffer', $parameters);
 
@@ -235,7 +231,7 @@ class ErvClient
      * @return ResultInterface & Type\ActivatePolicyResponse
      * @throws SoapException
      */
-    public function activatePolicy(\ErvClient\Type\ActivatePolicy $parameters) : \ErvClient\Type\ActivatePolicyResponse
+    public function activatePolicy(\ErvClient\Type\ActivatePolicy $parameters): \ErvClient\Type\ActivatePolicyResponse
     {
         $response = ($this->caller)('activatePolicy', $parameters);
 
@@ -250,7 +246,7 @@ class ErvClient
      * @return ResultInterface & Type\GetProductsResponse
      * @throws SoapException
      */
-    public function getProducts(\ErvClient\Type\GetProducts $parameters) : \ErvClient\Type\GetProductsResponse
+    public function getProducts(\ErvClient\Type\GetProducts $parameters): \ErvClient\Type\GetProductsResponse
     {
         $response = ($this->caller)('getProducts', $parameters);
 

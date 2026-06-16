@@ -17,7 +17,7 @@ class DocumentDataResp
     /**
      * @return null | \ErvClient\Type\RespError
      */
-    public function getError() : ?\ErvClient\Type\RespError
+    public function getError(): ?\ErvClient\Type\RespError
     {
         return $this->error;
     }
@@ -26,7 +26,7 @@ class DocumentDataResp
      * @param null | \ErvClient\Type\RespError $error
      * @return static
      */
-    public function withError(?\ErvClient\Type\RespError $error) : static
+    public function withError(?\ErvClient\Type\RespError $error): static
     {
         $new = clone $this;
         $new->error = $error;
@@ -37,7 +37,7 @@ class DocumentDataResp
     /**
      * @return null | \ErvClient\Type\DocumentData
      */
-    public function getDocumentData() : ?\ErvClient\Type\DocumentData
+    public function getDocumentData(): ?\ErvClient\Type\DocumentData
     {
         return $this->documentData;
     }
@@ -46,7 +46,7 @@ class DocumentDataResp
      * @param null | \ErvClient\Type\DocumentData $documentData
      * @return static
      */
-    public function withDocumentData(?\ErvClient\Type\DocumentData $documentData) : static
+    public function withDocumentData(?\ErvClient\Type\DocumentData $documentData): static
     {
         $new = clone $this;
         $new->documentData = $documentData;
